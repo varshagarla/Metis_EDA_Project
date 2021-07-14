@@ -1,0 +1,30 @@
+Varsha Garla
+EDA Project Proposal
+
+Question/need:
+-- What is the framing question of your analysis, or the purpose of the model/system you plan to build?
+To explore whether the decline in subway ridership in NYC during the initial months of the COVID-19 pandemic (March, April, May 2020 at least) was influenced by the socioeconomic status of residents in different neighborhoods
+
+-- Who benefits from exploring this question or building this model/system?
+This insight could help NYC public health officials detect health disparities between different neighborhoods since more crowded subways do not lend to social distancing and increase the risk of viral spread. 
+
+
+Data Description:
+-- What dataset(s) do you plan to use, and how will you obtain the data?
+Subway usage: MTA turnstile data - entry/exit data for every station
+Socioeconomic status: IRS income data - average adjusted gross income bracket for each zip code
+Both datasets are publicly available online.
+
+-- What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with? If modeling, what will you predict as your target?
+Percent change in stations' entries (relative to February) over time
+Stations aggregated by income bracket
+
+Tools:
+-- How do you intend to meet the tools requirement of the project?
+Ingesting raw MTA turnstile data into a SQL database, Querying from that database into Python via SQLAlchemy (i.e. group by zipcode), Exploratory data analysis in pandas (monthly average usage, percent decline, etc.), Python visualization libraries (i.e. bar graph of percent decline of subway usage by income bracket)
+
+-- Are you planning in advance to need or use additional tools beyond those required?
+Additional tools not needed but may use Tableau for visualization
+MVP Goal:
+-- What would a minimum viable product (MVP) look like for this project?
+bar graph of percent decline of subway usage from February to March by income bracket
